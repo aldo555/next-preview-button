@@ -2,6 +2,14 @@
 
 Strapi 5 plugin that adds a preview button to the edit view.
 
+### Installation
+
+```bash
+npm i next-preview-button
+```
+
+### Configuration
+
 `config/plugins.ts`
 ```javascript
 'next-preview-button': {
