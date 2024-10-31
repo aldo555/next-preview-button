@@ -52,10 +52,10 @@
     "kind": "plugin",
     "name": "next-preview-button",
     "displayName": "Next Preview Button",
-    "description": "Plugin that adds a preview button to the main menu and edit view"
+    "description": "Strapi 5 plugin that adds a preview button to the edit view."
   },
   "name": "next-preview-button",
-  "description": "Plugin that adds a preview button to the main menu and edit view",
+  "description": "Strapi 5 plugin that adds a preview button to the edit view.",
   "license": "MIT",
   "author": "aldo555 <aldodumitrescu@gmail.com>"
 }
