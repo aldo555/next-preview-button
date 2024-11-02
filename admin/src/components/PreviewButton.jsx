@@ -76,34 +76,31 @@ export const PreviewButton = ({ document }) => {
     return url.replace(':slug', values[contentType.slug] || '')
   }
 
+  if (!contentType || !document || !hasDraftAndPublish) {
+    return null
+  }
+
   return {
     title: 'Preview',
     content: (
       <>
-        {contentType && document && hasDraftAndPublish && (
-          <>
-            <Button
-              variant="secondary"
-              fullWidth
-              startIcon={<Pencil />}
+        <Button
+          variant="secondary"
+          fullWidth
+          startIcon={<Pencil />}
 
-              onClick={handleDraftClick}
-            >
-              View Draft
-            </Button>
-            <Button
-              variant="secondary"
-              fullWidth
-              startIcon={<Globe />}
-              onClick={handleLiveClick}
-            >
-              View Live
-            </Button>
-          </>
-        )}
-        {(!contentType || !document || !hasDraftAndPublish) && (
-          <Typography>Preview is not available.</Typography>
-        )}
+          onClick={handleDraftClick}
+        >
+          View Draft
+        </Button>
+        <Button
+          variant="secondary"
+          fullWidth
+          startIcon={<Globe />}
+          onClick={handleLiveClick}
+        >
+          View Live
+        </Button>
       </>
     ),
   }

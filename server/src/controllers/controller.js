@@ -1,7 +1,7 @@
 const controller = ({ strapi }) => ({
   index(ctx) {
     const model = ctx.request.query.model;
-    const config = strapi.config.get('plugin.next-preview-button');
+    const config = strapi.config.get('plugin::next-preview-button');
 
     const contentType = config.contentTypes.find((contentType) => contentType.model === model);
 
