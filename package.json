@@ -57,5 +57,13 @@
   "name": "next-preview-button",
   "description": "Strapi 5 plugin that adds a preview button to the edit view.",
   "license": "MIT",
-  "author": "aldo555 <aldodumitrescu@gmail.com>"
+  "author": "aldo555 <aldodumitrescu@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aldo555/next-preview-button.git"
+  },
+  "bugs": {
+    "url": "https://github.com/aldo555/next-preview-button/issues"
+  },
+  "homepage": "https://github.com/aldo555/next-preview-button#readme"
 }
